@@ -1,0 +1,124 @@
+/* Layout container */
+.layout {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f6f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 240px;
+    background-color: #1f2a40;
+    color: white;
+    transition: width 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .sidebar.collapsed {
+    width: 60px;
+  }
+  
+  .sidebar-header {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #334155;
+  }
+  
+  .sidebar-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Navigation */
+  .nav-links {
+    padding: 16px 0;
+    flex: 1;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+  }
+  
+  .nav-item:hover {
+    background-color: #334155;
+    border-left: 4px solid #60a5fa;
+    padding-left: 16px;
+  }
+  
+  /* Logout button */
+  .logout-section {
+    padding: 16px;
+    border-top: 1px solid #334155;
+  }
+  
+  .logout-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    color: #f87171;
+    font-size: 0.95rem;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .logout-button:hover {
+    color: #f87171;
+    text-decoration: underline;
+  }
+  
+  /* Main content */
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-header {
+    background-color: white;
+    padding: 16px 24px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .welcome-title {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: cent   er;
+    gap: 8px;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .main-content {
+    /* padding: 24px;       */
+    overflow-y: auto;
+    background-color: #f9fafb;
+  }
+  

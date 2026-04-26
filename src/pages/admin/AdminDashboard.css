@@ -1,0 +1,63 @@
+.dashboard-container {
+    padding: 2rem;
+    background: #f0f4f8;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .dashboard-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 2.5rem;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+  }
+  
+  .nav-card {
+    background: linear-gradient(145deg, #ffffff, #f6f6f6);
+    border-radius: 18px;
+    padding: 1.8rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+  
+  .nav-card:hover {
+    transform: translateY(-5px);
+    border-color: #007bff;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    background: #ffffff;
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1rem;
+  }
+  
+  .card-icon {
+    font-size: 1.6rem;
+    color: #007bff;
+  }
+  
+  .nav-card h3 {
+    font-size: 1.3rem;
+    margin: 0;
+    color: #222;
+  }
+  
+  .nav-card p {
+    color: #555;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+  }
+  
